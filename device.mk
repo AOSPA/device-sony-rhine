@@ -121,6 +121,10 @@ PRODUCT_PACKAGES += \
     libnfc \
     Nfc
 
+# Power
+PRODUCT_PACKAGES += \
+    power.rhine
+
 #GPS
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -189,6 +193,10 @@ PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
+
+# QC Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
 # Platform specific default properties
 #
