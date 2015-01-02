@@ -143,6 +143,9 @@ PRODUCT_PACKAGES += \
     tad_static \
     ta_qmi_service
 
+PRODUCT_PACKAGES += \
+    libemoji
+
 #OSS
 PRODUCT_PACKAGES += \
     thermanager \
