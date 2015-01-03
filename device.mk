@@ -175,6 +175,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     e2fsck
 
+# Extract recovery ramdisks
+PRODUCT_PACKAGES += \
+    extract_elf_ramdisk
+
 # Platform specific tags
 #
 PRODUCT_TAGS += dalvik.gc.type-precise
