@@ -34,10 +34,6 @@ PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc \
     $(SONY_ROOT)/system/usr/idc/max1187x_touchscreen_0.idc:system/usr/idc/max1187x_touchscreen_0.idc \
     $(SONY_ROOT)/system/usr/keylayout/msm8974-taiko-mtp-snd-card_Button_Jack.kl:system/usr/keylayout/msm8974-taiko-mtp-snd-card_Button_Jack.kl \
-    $(SONY_ROOT)/system/usr/keylayout/Vendor_045e_Product_0719.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl \
-    $(SONY_ROOT)/system/usr/keylayout/Vendor_046d_Product_c21a.kl:system/usr/keylayout/Vendor_046d_Product_c21a.kl \
-    $(SONY_ROOT)/system/usr/keylayout/Vendor_046d_Product_c21d.kl:system/usr/keylayout/Vendor_046d_Product_c21d.kl \
-    $(SONY_ROOT)/system/usr/keylayout/Vendor_0810_Product_0002.kl:system/usr/keylayout/Vendor_0810_Product_0002.kl \
     $(SONY_ROOT)/system/usr/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
     $(SONY_ROOT)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(SONY_ROOT)/system/usr/keylayout/mhl-rcp.kl:system/usr/keylayout/mhl-rcp.kl \
@@ -111,6 +107,9 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libqdMetaData
 
+PRODUCT_PACKAGES += \
+    libion
+
 #OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -167,8 +166,7 @@ PRODUCT_PACKAGES += \
 #OSS
 PRODUCT_PACKAGES += \
     thermanager \
-    wcnss_addr \
-    bt_addr
+    addrsetup
 
 PRODUCT_PACKAGES += \
     rmt_storage
