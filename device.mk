@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
 
 #WLAN
 PRODUCT_PACKAGES += \
+    dhcpcd.conf \
     hostapd \
     libwpa_client \
     wpa_supplicant \
